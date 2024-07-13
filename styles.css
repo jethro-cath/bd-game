@@ -1,0 +1,76 @@
+body * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #252C56;
+    font-family: "Roboto", sans-serif;
+    color: #F0F4EF;
+}
+
+.wrapper {
+    min-height: 100vh;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.upper-panel {
+    background-color: #505570;
+
+    font-weight: 200;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.5em;
+}
+
+.upper-panel span {
+    color: #0CCA4A;
+}
+
+.call {
+    flex-grow: 1;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.spy-icon {
+    height: 200px;
+}
+
+.call-button {
+    padding: 1em;
+    border-radius: 50%;
+
+    font-size: 1.5em;
+    margin-top: 2em;
+
+    background-color: #ca190c;
+}
+
+@keyframes glowing {
+    0% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+    50% { background-color: #49e819; box-shadow: 0 0 12px #49e819; }
+    100% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+}
+
+.call-button_incoming {
+    background-color: #0CCA4A;
+
+    animation: glowing 1300ms infinite;
+}
